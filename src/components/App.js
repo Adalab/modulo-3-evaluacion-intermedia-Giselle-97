@@ -44,7 +44,6 @@ function App() {
       quote: '',
       character: '',
     });
-  ;
 
   //2-Function renderList and filter
   const renderList = () => {
