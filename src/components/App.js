@@ -29,50 +29,40 @@ function App() {
   };
   //filtro
   // Función para filtrar citas
-const handleQuoteFilter = (event) => {
+  const handleQuoteFilter = (event) => {
     const { value } = event.target;
-setFilteredQuotes(value);
-};};
+    setFilteredQuotes(value);
+  };
 
-// Función para filtrar personajes
-  
-const handleCharacterFilter = (event) => {
+  // Función para filtrar personajes
+
+  const handleCharacterFilter = (event) => {
     const { value } = event.target;
     setFilterCharacter(value);
   };
 
-// Función para renderizar la lista filtrada
-const renderList = () => {
-let filteredList = list;
-if (filteredQuotes) {
-      filteredList = filteredList. 
-filter((elementList) =>
-        elementList.    
-quote.includes(filteredQuotes)
+  // Función para renderizar la lista filtrada
+  /*const renderList = () => {
+    let filteredList = list;
+    if (filteredQuotes) {
+      filteredList = filteredList.filter((elementList) =>
+        elementList.quote.includes(filteredQuotes)
       );
-}
+    }
     if (filterCharacter) {
-      filteredList = filteredList.
-      filteredList
-filter((elementList) =>
-        elementList.character.includes(filterCharacter)
-      );
+      filteredList = filteredList.filteredList;
+      filter((elementList) => elementList.character.includes(filterCharacter));
     }
-      );
-    }
-return filteredList.map((elementList, i) => (
-      
-     
-<li key={i}>
+    return filteredList.map((elementList, i) => (
+      <li key={i}>
         {elementList.quote} {elementList.character}
       </li>
     ));
-  };
-
+  };*/
 
   return (
     //CÓDIGO HTML
-   <div>
+    <div>
       <header>
         <h1>Frases de Friends</h1>
       </header>
