@@ -44,6 +44,7 @@ function App() {
       quote: '',
       character: '',
     });
+  };
 
   //2-Function renderList and filter
   const renderList = () => {
@@ -88,9 +89,19 @@ function App() {
       <ul>{renderList()}</ul>
       <form action=''>
         <label>Frase</label>
-        <input type='text' name='quote' onInput={handleNewQuote} value={newQuote.quote}/>
+        <input
+          type='text'
+          name='quote'
+          onInput={handleNewQuote}
+          value={newQuote.quote}
+        />
         <label>Personaje</label>
-        <input type='text' name='character' onInput={handleNewQuote} value={newQuote.character} />
+        <input
+          type='text'
+          name='character'
+          onInput={handleNewQuote}
+          value={newQuote.character}
+        />
         <button onClick={handleClick}>Añadir la nueva frase</button>
       </form>
     </div>
