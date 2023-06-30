@@ -73,7 +73,8 @@
 }
 
 .form1__text1--input {
-  margin-left: -100px;
+  margin-left: -400px;
+  border: solid 2px mediumvioletred;
 }
 
 .form1__text2 {
@@ -83,40 +84,48 @@
 }
 
 .form1__text2--select {
-  margin-left: -100px;
+  margin-left: -400px;
+  border: solid 2px mediumvioletred;
 }
 
 .list {
-  background-color: rgb(170, 234, 234);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 5px 0 5px;
 }
 
 .list__element {
+  margin-bottom: 2px;
+  width: 90%;
+  padding: 5px;
+  border: solid 2px rgb(5, 168, 41);
+  background-color: rgb(243, 235, 242);
 }
 
 .list__element--quote {
   font-size: 14px;
-  font-family: $font-secundary;
+  font-family: $font-primary;
 }
 
 .list__element--character {
   font-size: 12px;
   font-family: $font-primary;
+  font-weight: bold;
 }
 
 .form2 {
-  padding: 30px;
+  padding: 10px 0 20px 0;
+  width: 90%;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0 0 20px;
   border: solid 2px mediumvioletred;
-  width: 500px;
 }
 
 .legend {
-  //padding-bottom: 10px;
   color: rgb(10, 0, 7);
   font-size: 20px;
   font-family: $font-primary;
@@ -130,24 +139,26 @@ fieldset {
   padding-bottom: 25px;
 }
 
-.textFrase {
+.textQuote {
   font-size: 18px;
   font-family: $font-secundary;
 }
 
-.textPersonaje {
-  font-size: 18px;
-  font-family: $font-secundary;
-}
-
-.inputFrase {
-  width: 50%;
+.inputQuote {
+  width: 60%;
   margin-left: 50px;
+  border: solid 2px mediumvioletred;
 }
 
-.inputPersonaje {
-  width: 50%;
+.textCharacter {
+  font-size: 18px;
+  font-family: $font-secundary;
+}
+
+.inputCharacter {
+  width: 60%;
   margin-left: 18px;
+  border: solid 2px mediumvioletred;
 }
 
 .button {
@@ -173,10 +184,10 @@ fieldset {
 }
 
 .footer {
-  height: 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
   background: repeating-linear-gradient(
       190deg,
       rgba(2, 109, 37, 0.5) 40px,
@@ -210,6 +221,13 @@ fieldset {
       rgb(96, 241, 118) 350px,
       rgb(159, 248, 170) 370px
     );
+}
+
+.footer__img {
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+  border: solid 1px white;
 }
 
 .footer__text {

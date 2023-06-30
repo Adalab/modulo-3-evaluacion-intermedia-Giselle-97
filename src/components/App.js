@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../styles/App.scss';
 import img from '../images/friends.png';
+import imgLogo from '../images/logo.png';
 
 //Component
 function App() {
@@ -103,14 +104,13 @@ function App() {
           </select>
         </form>
         <ul className='list'>{renderList()}</ul>
-
         <form className='form2'>
           <fieldset className='fieldset'>
             <legend className='legend'>Añadir frase</legend>
             <div className='div1'>
-              <label className='textFrase'>Frase</label>
+              <label className='textQuote'>Frase</label>
               <input
-                className='inputFrase'
+                className='inputQuote'
                 type='text'
                 name='quote'
                 onInput={handleNewQuote}
@@ -118,9 +118,9 @@ function App() {
               />
             </div>
             <div className='div2'>
-              <label className='textPersonaje'>Personaje</label>
+              <label className='textCharacter'>Personaje</label>
               <input
-                className='inputPersonaje'
+                className='inputCharacter'
                 type='text'
                 name='character'
                 onInput={handleNewQuote}
@@ -134,8 +134,8 @@ function App() {
         </form>
       </main>
       <footer className='footer'>
+        <img className='footer__img' src={imgLogo} alt='Logo' />
         <p className='footer__text'>Adalab &copy;2023</p>
-        <p className='footer__text'>Project by: Giselle Castro Durán</p>
       </footer>
     </div>
   );
