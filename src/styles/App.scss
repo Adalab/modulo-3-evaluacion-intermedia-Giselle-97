@@ -40,39 +40,73 @@
       rgb(159, 248, 170) 370px
     );
 }
+
 .header__img {
   border-radius: 50%;
   height: 10%;
   width: 10%;
 }
+
 .header__title {
   font-size: 40px;
   color: white;
   font-family: $font-primary;
 }
+
 .hero {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
 }
+
 .form1 {
   display: flex;
   justify-content: space-between;
+  width: 80%;
 }
+
 .form1__text1 {
   color: rgb(10, 0, 7);
-  font-size: 22px;
+  font-size: 18px;
   font-family: $font-primary;
 }
+
+.form1__text1--input {
+  margin-left: -100px;
+}
+
 .form1__text2 {
   color: rgb(10, 0, 7);
-  font-size: 22px;
+  font-size: 18px;
   font-family: $font-primary;
 }
+
+.form1__text2--select {
+  margin-left: -100px;
+}
+
+.list {
+  background-color: rgb(170, 234, 234);
+}
+
+.list__element {
+}
+
+.list__element--quote {
+  font-size: 14px;
+  font-family: $font-secundary;
+}
+
+.list__element--character {
+  font-size: 12px;
+  font-family: $font-primary;
+}
+
 .form2 {
   padding: 30px;
 }
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -80,34 +114,42 @@ fieldset {
   border: solid 2px mediumvioletred;
   width: 500px;
 }
+
 .legend {
   //padding-bottom: 10px;
   color: rgb(10, 0, 7);
   font-size: 20px;
   font-family: $font-primary;
 }
+
 .div1 {
   padding-bottom: 15px;
 }
+
 .div2 {
   padding-bottom: 25px;
 }
+
 .textFrase {
   font-size: 18px;
   font-family: $font-secundary;
 }
+
 .textPersonaje {
   font-size: 18px;
   font-family: $font-secundary;
 }
+
 .inputFrase {
   width: 50%;
   margin-left: 50px;
 }
+
 .inputPersonaje {
   width: 50%;
   margin-left: 18px;
 }
+
 .button {
   font-family: $font-primary;
   margin: auto;
@@ -169,6 +211,7 @@ fieldset {
       rgb(159, 248, 170) 370px
     );
 }
+
 .footer__text {
   color: white;
   font-size: 20px;

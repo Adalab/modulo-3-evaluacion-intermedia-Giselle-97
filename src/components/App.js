@@ -62,9 +62,11 @@ function App() {
         }
       })
       .map((elementList, i) => (
-        <li className='elemntlist' key={i}>
-          <h4> {elementList.quote} </h4>
-          <span>{elementList.character}</span>
+        <li className='list__element' key={i}>
+          <h4 className='list__element--quote'> {elementList.quote} </h4>
+          <span className='list__element--character'>
+            {elementList.character}
+          </span>
         </li>
       ));
   };
@@ -78,9 +80,19 @@ function App() {
       <main className='hero'>
         <form className='form1'>
           <label className='form1__text1'>Filtrar por personaje</label>
-          <input type='text' onInput={handleQuote} value={filteredQuote} />
+          <input
+            className='form1__text1--input'
+            type='text'
+            onInput={handleQuote}
+            value={filteredQuote}
+          />
           <label className='form1__text2'>Filtrar por personaje</label>
-          <select name='' id='' onChange={handleCharacter}>
+          <select
+            className='form1__text2--select'
+            name=''
+            id=''
+            onChange={handleCharacter}
+          >
             <option value='all'>Todos</option>
             <option value='Joey'>Joey</option>
             <option value='Phoebe'>Phoebe</option>
