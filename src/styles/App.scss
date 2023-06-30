@@ -3,10 +3,9 @@
 
 .header {
   display: flex;
-  justify-content: space-around;
-  gap: 500px;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   background: repeating-linear-gradient(
       190deg,
       rgba(2, 109, 37, 0.5) 40px,
@@ -41,12 +40,12 @@
       rgb(159, 248, 170) 370px
     );
 }
-.img {
+.header__img {
   border-radius: 50%;
   height: 10%;
   width: 10%;
 }
-.title {
+.header__title {
   font-size: 40px;
   color: white;
   font-family: $font-primary;
@@ -55,9 +54,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 10px;
+}
+.form1 {
+  display: flex;
+  justify-content: space-between;
+}
+.form1__text1 {
+  color: rgb(10, 0, 7);
+  font-size: 22px;
+  font-family: $font-primary;
+}
+.form1__text2 {
+  color: rgb(10, 0, 7);
+  font-size: 22px;
+  font-family: $font-primary;
 }
 .form2 {
-  padding: 40px;
+  padding: 30px;
 }
 fieldset {
   display: flex;
@@ -69,7 +83,7 @@ fieldset {
 .legend {
   //padding-bottom: 10px;
   color: rgb(10, 0, 7);
-  font-size: 22px;
+  font-size: 20px;
   font-family: $font-primary;
 }
 .div1 {
@@ -117,7 +131,7 @@ fieldset {
 }
 
 .footer {
-  height: 100px;
+  height: 90px;
   display: flex;
   justify-content: space-around;
   align-items: center;

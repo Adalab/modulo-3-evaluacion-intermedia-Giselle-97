@@ -62,7 +62,7 @@ function App() {
         }
       })
       .map((elementList, i) => (
-        <li key={i}>
+        <li className='elemntlist' key={i}>
           <h4> {elementList.quote} </h4>
           <span>{elementList.character}</span>
         </li>
@@ -72,14 +72,14 @@ function App() {
   return (
     <div>
       <header className='header'>
-        <img className='img' src={img} alt='img' />
-        <h1 className='title'>Frases de Friends</h1>
+        <img className='header__img' src={img} alt='img' />
+        <h1 className='header__title'>Frases de Friends</h1>
       </header>
       <main className='hero'>
-        <form>
-          <label>Filtrar por personaje</label>
+        <form className='form1'>
+          <label className='form1__text1'>Filtrar por personaje</label>
           <input type='text' onInput={handleQuote} value={filteredQuote} />
-          <label>Filtrar por personaje</label>
+          <label className='form1__text2'>Filtrar por personaje</label>
           <select name='' id='' onChange={handleCharacter}>
             <option value='all'>Todos</option>
             <option value='Joey'>Joey</option>
@@ -90,7 +90,7 @@ function App() {
             <option value='Monica'>Monica</option>
           </select>
         </form>
-        <ul>{renderList()}</ul>
+        <ul className='list'>{renderList()}</ul>
 
         <form className='form2'>
           <fieldset className='fieldset'>
