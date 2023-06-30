@@ -1,5 +1,198 @@
 @import '../styles/core/reset';
 @import '../styles/core/variables';
 
-.title {
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap: 500px;
+  align-items: center;
+  padding: 10px;
+  background: repeating-linear-gradient(
+      190deg,
+      rgba(2, 109, 37, 0.5) 40px,
+      rgba(2, 111, 38, 0.5) 80px,
+      rgba(3, 161, 53, 0.5) 120px,
+      rgba(6, 192, 37, 0.5) 160px,
+      rgba(31, 214, 95, 0.5) 200px,
+      rgba(62, 230, 152, 0.5) 240px,
+      rgba(80, 236, 145, 0.5) 280px,
+      rgba(148, 248, 196, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(2, 109, 37, 0.5) 40px,
+      rgba(2, 111, 38, 0.5) 80px,
+      rgba(3, 161, 53, 0.5) 120px,
+      rgba(6, 192, 37, 0.5) 160px,
+      rgba(31, 214, 95, 0.5) 200px,
+      rgba(62, 230, 152, 0.5) 240px,
+      rgba(80, 236, 145, 0.5) 280px,
+      rgba(148, 248, 196, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      rgb(2, 81, 31) 50px,
+      rgb(2, 134, 17) 100px,
+      rgb(6, 188, 48) 150px,
+      rgb(5, 207, 55) 200px,
+      rgb(3, 229, 41) 250px,
+      rgb(44, 246, 88) 300px,
+      rgb(96, 241, 118) 350px,
+      rgb(159, 248, 170) 370px
+    );
 }
+.img {
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+}
+.title {
+  font-size: 40px;
+  color: white;
+  font-family: $font-primary;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form2 {
+  padding: 40px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: solid 2px mediumvioletred;
+  width: 500px;
+}
+.legend {
+  //padding-bottom: 10px;
+  color: rgb(10, 0, 7);
+  font-size: 22px;
+  font-family: $font-primary;
+}
+.div1 {
+  padding-bottom: 15px;
+}
+.div2 {
+  padding-bottom: 25px;
+}
+.textFrase {
+  font-size: 18px;
+  font-family: $font-secundary;
+}
+.textPersonaje {
+  font-size: 18px;
+  font-family: $font-secundary;
+}
+.inputFrase {
+  width: 50%;
+  margin-left: 50px;
+}
+.inputPersonaje {
+  width: 50%;
+  margin-left: 18px;
+}
+.button {
+  font-family: $font-primary;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 150px;
+  border-radius: 20px;
+  padding: 4px;
+  color: #fff;
+  border: solid 1px rgb(168, 5, 138);
+  background-color: rgb(168, 5, 138);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  cursor: pointer;
+  color: rgb(168, 5, 138);
+  background-color: white;
+  box-shadow: 0 4px 20px rgb(168, 5, 138);
+  transition: all 0.2 ease;
+  border-color: rgb(168, 5, 138);
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: repeating-linear-gradient(
+      190deg,
+      rgba(2, 109, 37, 0.5) 40px,
+      rgba(2, 111, 38, 0.5) 80px,
+      rgba(3, 161, 53, 0.5) 120px,
+      rgba(6, 192, 37, 0.5) 160px,
+      rgba(31, 214, 95, 0.5) 200px,
+      rgba(62, 230, 152, 0.5) 240px,
+      rgba(80, 236, 145, 0.5) 280px,
+      rgba(148, 248, 196, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(2, 109, 37, 0.5) 40px,
+      rgba(2, 111, 38, 0.5) 80px,
+      rgba(3, 161, 53, 0.5) 120px,
+      rgba(6, 192, 37, 0.5) 160px,
+      rgba(31, 214, 95, 0.5) 200px,
+      rgba(62, 230, 152, 0.5) 240px,
+      rgba(80, 236, 145, 0.5) 280px,
+      rgba(148, 248, 196, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      rgb(2, 81, 31) 50px,
+      rgb(2, 134, 17) 100px,
+      rgb(6, 188, 48) 150px,
+      rgb(5, 207, 55) 200px,
+      rgb(3, 229, 41) 250px,
+      rgb(44, 246, 88) 300px,
+      rgb(96, 241, 118) 350px,
+      rgb(159, 248, 170) 370px
+    );
+}
+.footer__text {
+  color: white;
+  font-size: 20px;
+  font-family: $font-secundary;
+}
+/*
+background: repeating-linear-gradient(
+      190deg,
+      rgba(76, 2, 99, 0.5) 40px,
+      rgba(117, 2, 132, 0.5) 80px,
+      rgba(146, 3, 122, 0.5) 120px,
+      rgba(192, 6, 186, 0.5) 160px,
+      rgba(216, 12, 216, 0.5) 200px,
+      rgba(226, 6, 200, 0.5) 240px,
+      rgba(243, 39, 243, 0.5) 280px,
+      rgba(242, 96, 222, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      -190deg,
+      rgba(76, 2, 99, 0.5) 40px,
+      rgba(117, 2, 132, 0.5) 80px,
+      rgba(146, 3, 122, 0.5) 120px,
+      rgba(192, 6, 186, 0.5) 160px,
+      rgba(216, 12, 216, 0.5) 200px,
+      rgba(226, 6, 200, 0.5) 240px,
+      rgba(243, 39, 243, 0.5) 280px,
+      rgba(242, 96, 222, 0.5) 300px
+    ),
+    repeating-linear-gradient(
+      23deg,
+      indigo 50px,
+      rgb(133, 5, 129) 100px,
+      rgb(149, 3, 120) 150px,
+      rgb(161, 24, 189) 200px,
+      rgb(229, 33, 226) 250px,
+      rgb(248, 73, 245) 300px,
+      rgb(238, 98, 194) 350px,
+      rgb(251, 151, 224) 370px
+    );
+}
+*/

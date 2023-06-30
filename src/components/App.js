@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../styles/App.scss';
+import img from '../images/friends.png';
+
 //Component
 function App() {
   const [list, setList] = useState([]);
@@ -70,41 +72,59 @@ function App() {
   return (
     <div>
       <header className='header'>
-        <h1 className='title'>Frases de F.r.i.e.n.d.s</h1>
+        <img className='img' src={img} alt='img' />
+        <h1 className='title'>Frases de Friends</h1>
       </header>
-      <form>
-        <label>Filtrar por personaje</label>
-        <input type='text' onInput={handleQuote} value={filteredQuote} />
-        <label>Filtrar por personaje</label>
-        <select name='' id='' onChange={handleCharacter}>
-          <option value='all'>Todos</option>
-          <option value='Joey'>Joey</option>
-          <option value='Phoebe'>Phoebe</option>
-          <option value='Chandler'>Chandler</option>
-          <option value='Rachel'>Rachel</option>
-          <option value='Ross'>Ross</option>
-          <option value='Monica'>Monica</option>
-        </select>
-      </form>
-      <ul>{renderList()}</ul>
-      <form action=''>
-        <label>Frase</label>
-        <input
-          type='text'
-          name='quote'
-          onInput={handleNewQuote}
-          value={newQuote.quote}
-        />
-        <label>Personaje</label>
-        <input
-          type='text'
-          name='character'
-          onInput={handleNewQuote}
-          value={newQuote.character}
-        />
-        <button onClick={handleClick}>Añadir la nueva frase</button>
-      </form>
-      <footer className='footer'>Adalab &copy;2023</footer>
+      <main className='hero'>
+        <form>
+          <label>Filtrar por personaje</label>
+          <input type='text' onInput={handleQuote} value={filteredQuote} />
+          <label>Filtrar por personaje</label>
+          <select name='' id='' onChange={handleCharacter}>
+            <option value='all'>Todos</option>
+            <option value='Joey'>Joey</option>
+            <option value='Phoebe'>Phoebe</option>
+            <option value='Chandler'>Chandler</option>
+            <option value='Rachel'>Rachel</option>
+            <option value='Ross'>Ross</option>
+            <option value='Monica'>Monica</option>
+          </select>
+        </form>
+        <ul>{renderList()}</ul>
+
+        <form className='form2'>
+          <fieldset className='fieldset'>
+            <legend className='legend'>Añadir frase</legend>
+            <div className='div1'>
+              <label className='textFrase'>Frase</label>
+              <input
+                className='inputFrase'
+                type='text'
+                name='quote'
+                onInput={handleNewQuote}
+                value={newQuote.quote}
+              />
+            </div>
+            <div className='div2'>
+              <label className='textPersonaje'>Personaje</label>
+              <input
+                className='inputPersonaje'
+                type='text'
+                name='character'
+                onInput={handleNewQuote}
+                value={newQuote.character}
+              />
+            </div>
+            <button className='button' onClick={handleClick}>
+              Añadir nueva frase
+            </button>
+          </fieldset>
+        </form>
+      </main>
+      <footer className='footer'>
+        <p className='footer__text'>Adalab &copy;2023</p>
+        <p className='footer__text'>Project by: Giselle Castro Durán</p>
+      </footer>
     </div>
   );
 }
