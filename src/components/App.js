@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../styles/App.css';
+import '../styles/App.scss';
 //Component
 function App() {
   const [list, setList] = useState([]);
@@ -69,8 +69,8 @@ function App() {
 
   return (
     <div>
-      <header>
-        <h1>Frases de Friends</h1>
+      <header className='header'>
+        <h1 className='title'>Frases de F.r.i.e.n.d.s</h1>
       </header>
       <form>
         <label>Filtrar por personaje</label>
@@ -104,6 +104,7 @@ function App() {
         />
         <button onClick={handleClick}>Añadir la nueva frase</button>
       </form>
+      <footer className='footer'>Adalab &copy;2023</footer>
     </div>
   );
 }
