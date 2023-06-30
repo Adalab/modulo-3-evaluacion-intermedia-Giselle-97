@@ -63,9 +63,12 @@
 .form1 {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
 }
-
+.container1 {
+  display: flex;
+  align-items: center;
+}
 .form1__text1 {
   color: rgb(10, 0, 7);
   font-size: 18px;
@@ -73,8 +76,8 @@
 }
 
 .form1__text1--input {
-  margin-left: -400px;
   border: solid 2px mediumvioletred;
+  margin-left: 20px;
 }
 
 .form1__text2 {
@@ -84,14 +87,14 @@
 }
 
 .form1__text2--select {
-  margin-left: -400px;
   border: solid 2px mediumvioletred;
+  margin-left: 20px;
 }
 
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px 5px 0 5px;
+  padding: 10px 0 0 50px;
 }
 
 .list__element {
@@ -235,39 +238,3 @@ fieldset {
   font-size: 20px;
   font-family: $font-secundary;
 }
-/*
-background: repeating-linear-gradient(
-      190deg,
-      rgba(76, 2, 99, 0.5) 40px,
-      rgba(117, 2, 132, 0.5) 80px,
-      rgba(146, 3, 122, 0.5) 120px,
-      rgba(192, 6, 186, 0.5) 160px,
-      rgba(216, 12, 216, 0.5) 200px,
-      rgba(226, 6, 200, 0.5) 240px,
-      rgba(243, 39, 243, 0.5) 280px,
-      rgba(242, 96, 222, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      -190deg,
-      rgba(76, 2, 99, 0.5) 40px,
-      rgba(117, 2, 132, 0.5) 80px,
-      rgba(146, 3, 122, 0.5) 120px,
-      rgba(192, 6, 186, 0.5) 160px,
-      rgba(216, 12, 216, 0.5) 200px,
-      rgba(226, 6, 200, 0.5) 240px,
-      rgba(243, 39, 243, 0.5) 280px,
-      rgba(242, 96, 222, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      23deg,
-      indigo 50px,
-      rgb(133, 5, 129) 100px,
-      rgb(149, 3, 120) 150px,
-      rgb(161, 24, 189) 200px,
-      rgb(229, 33, 226) 250px,
-      rgb(248, 73, 245) 300px,
-      rgb(238, 98, 194) 350px,
-      rgb(251, 151, 224) 370px
-    );
-}
-*/

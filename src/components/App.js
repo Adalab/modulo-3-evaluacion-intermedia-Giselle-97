@@ -80,28 +80,32 @@ function App() {
       </header>
       <main className='hero'>
         <form className='form1'>
-          <label className='form1__text1'>Filtrar por personaje</label>
-          <input
-            className='form1__text1--input'
-            type='text'
-            onInput={handleQuote}
-            value={filteredQuote}
-          />
-          <label className='form1__text2'>Filtrar por personaje</label>
-          <select
-            className='form1__text2--select'
-            name=''
-            id=''
-            onChange={handleCharacter}
-          >
-            <option value='all'>Todos</option>
-            <option value='Joey'>Joey</option>
-            <option value='Phoebe'>Phoebe</option>
-            <option value='Chandler'>Chandler</option>
-            <option value='Rachel'>Rachel</option>
-            <option value='Ross'>Ross</option>
-            <option value='Monica'>Monica</option>
-          </select>
+          <div className='container1'>
+            <label className='form1__text1'>Filtrar por personaje</label>
+            <input
+              className='form1__text1--input'
+              type='text'
+              onInput={handleQuote}
+              value={filteredQuote}
+            />
+          </div>
+          <div className='container1'>
+            <label className='form1__text2'>Filtrar por personaje</label>
+            <select
+              className='form1__text2--select'
+              name=''
+              id=''
+              onChange={handleCharacter}
+            >
+              <option value='all'>Todos</option>
+              <option value='Joey'>Joey</option>
+              <option value='Phoebe'>Phoebe</option>
+              <option value='Chandler'>Chandler</option>
+              <option value='Rachel'>Rachel</option>
+              <option value='Ross'>Ross</option>
+              <option value='Monica'>Monica</option>
+            </select>
+          </div>
         </form>
         <ul className='list'>{renderList()}</ul>
         <form className='form2'>
