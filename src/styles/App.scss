@@ -90,7 +90,9 @@
   border: solid 2px mediumvioletred;
   margin-left: 20px;
 }
-
+::placeholder {
+  font-family: $font-secundary;
+}
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;

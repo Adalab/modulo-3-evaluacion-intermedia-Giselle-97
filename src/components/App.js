@@ -81,16 +81,21 @@ function App() {
       <main className='hero'>
         <form className='form1'>
           <div className='container1'>
-            <label className='form1__text1'>Filtrar por personaje</label>
+            <label className='form1__text1' htmlFor='search__quote'>
+              Filtrar por frase
+            </label>
             <input
               className='form1__text1--input'
               type='text'
               onInput={handleQuote}
               value={filteredQuote}
+              placeholder='Ej: Pivot'
             />
           </div>
           <div className='container1'>
-            <label className='form1__text2'>Filtrar por personaje</label>
+            <label className='form1__text2' htmlFor='search__character'>
+              Filtrar por personaje
+            </label>
             <select
               className='form1__text2--select'
               name=''
@@ -112,7 +117,9 @@ function App() {
           <fieldset className='fieldset'>
             <legend className='legend'>Añadir frase</legend>
             <div className='div1'>
-              <label className='textQuote'>Frase</label>
+              <label className='textQuote' htmlFor='add__character'>
+                Frase
+              </label>
               <input
                 className='inputQuote'
                 type='text'
@@ -122,7 +129,9 @@ function App() {
               />
             </div>
             <div className='div2'>
-              <label className='textCharacter'>Personaje</label>
+              <label className='textCharacter' htmlFor='add__character'>
+                Personaje
+              </label>
               <input
                 className='inputCharacter'
                 type='text'
