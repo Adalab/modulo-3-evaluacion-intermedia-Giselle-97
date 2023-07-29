@@ -8,6 +8,9 @@
 <h3>📋Descripción</h3>
 <p>"Frases de Friends" es una página web que muestra frases y nombres de personajes de la famosa serie de televisión "Friends". Los usuarios pueden explorar y buscar frases de sus personajes favoritos, así como agregar nuevas frases y personajes a la colección. La página se ha desarrollado utilizando HTML, CSS, SASS, JSX y React, y sigue una estructura organizada con componentes para facilitar el mantenimiento y la escalabilidad del proyecto.</p>
 
+<h3>👀Vista previa</h3>
+Puedes ver una vista previa de la página web en línea haciendo clic en el siguiente enlace:
+<a href="http://giselle-97.github.io/Frases-de-Friends/">Frases de Friends - Vista previa</a>
 <h3>🔎Funcionalidades</h3>
 <ul>
   <li>Mostrar frases y nombres de personajes de la serie "Friends".</li>
@@ -74,4 +77,4 @@
 <p>Desarrollado por: Giselle Castro.</p>
 
 <h3>📧Contacto</h3>
-<p>Si tienes preguntas o comentarios sobre este proyecto, no dudes en ponerte en contacto conmigo a través de mi dirección de correo electrónico: giselle.cduran@hotmail.com.</p>
+<p>Si tienes preguntas o comentarios sobre este proyecto, no dudes en ponerte en contacto conmigo a través de mi dirección de correo electrónico: <a href="mailto:giselle.cduran@hotmail.com">giselle.cduran@hotmail.com</a>.</p>
