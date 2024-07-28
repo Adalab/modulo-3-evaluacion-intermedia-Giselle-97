@@ -14,12 +14,13 @@
       "web-vitals": "^2.1.4"
     },
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "githubpages": "rm -rf build && rm -rf docs && npm run build && mv build docs && git add docs/* && git commit -m \"Publish in GitHub Pages\" && git push",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
-    },
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "githubpages": "rm -rf build && rm -rf docs && npm run build && mv build docs && git add docs/* && git commit -m \"Publish in GitHub Pages\" && git push",
+    "deploy": "npm run githubpages",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
     "eslintConfig": {
       "extends": [
         "react-app",
