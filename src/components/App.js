@@ -79,25 +79,25 @@ function App() {
         <h1 className='header__title'>Frases de Friends</h1>
       </header>
       <main className='hero'>
-        <form className='form1'>
-          <div className='container1'>
-            <label className='form1__text1' htmlFor='search__quote'>
+        <form className='form'>
+          <div className='container'>
+            <label className='form__phraseFilter' htmlFor='search__quote'>
               Filtrar por frase
             </label>
             <input
-              className='form1__text1--input'
+              className='form__phraseFilter--input'
               type='text'
               onInput={handleQuote}
               value={filteredQuote}
               placeholder='Ej: Pivot'
             />
           </div>
-          <div className='container1'>
-            <label className='form1__text2' htmlFor='search__character'>
+          <div className='container'>
+            <label className='form__characterFilter' htmlFor='search__character'>
               Filtrar por personaje
             </label>
             <select
-              className='form1__text2--select'
+              className='form__characterFilter--select'
               name=''
               id=''
               onChange={handleCharacter}
@@ -113,10 +113,10 @@ function App() {
           </div>
         </form>
         <ul className='list'>{renderList()}</ul>
-        <form className='form2'>
+        <form className='formTwo'>
           <fieldset className='fieldset'>
             <legend className='legend'>Añadir frase</legend>
-            <div className='div1'>
+            <div className='boxPhrase'>
               <label className='textQuote' htmlFor='add__character'>
                 Frase
               </label>
@@ -128,7 +128,7 @@ function App() {
                 value={newQuote.quote}
               />
             </div>
-            <div className='div2'>
+            <div className='boxCharacter'>
               <label className='textCharacter' htmlFor='add__character'>
                 Personaje
               </label>

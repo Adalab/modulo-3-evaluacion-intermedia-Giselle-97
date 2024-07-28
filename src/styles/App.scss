@@ -6,121 +6,86 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px 5px 10px;
-  background: repeating-linear-gradient(
-      190deg,
-      rgba(2, 109, 37, 0.5) 40px,
-      rgba(2, 111, 38, 0.5) 80px,
-      rgba(3, 161, 53, 0.5) 120px,
-      rgba(6, 192, 37, 0.5) 160px,
-      rgba(31, 214, 95, 0.5) 200px,
-      rgba(62, 230, 152, 0.5) 240px,
-      rgba(80, 236, 145, 0.5) 280px,
-      rgba(148, 248, 196, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      -190deg,
-      rgba(2, 109, 37, 0.5) 40px,
-      rgba(2, 111, 38, 0.5) 80px,
-      rgba(3, 161, 53, 0.5) 120px,
-      rgba(6, 192, 37, 0.5) 160px,
-      rgba(31, 214, 95, 0.5) 200px,
-      rgba(62, 230, 152, 0.5) 240px,
-      rgba(80, 236, 145, 0.5) 280px,
-      rgba(148, 248, 196, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      23deg,
-      rgb(2, 81, 31) 50px,
-      rgb(2, 134, 17) 100px,
-      rgb(6, 188, 48) 150px,
-      rgb(5, 207, 55) 200px,
-      rgb(3, 229, 41) 250px,
-      rgb(44, 246, 88) 300px,
-      rgb(96, 241, 118) 350px,
-      rgb(159, 248, 170) 370px
-    );
-}
-
-.header__img {
-  border-radius: 50%;
-  height: 10%;
-  width: 10%;
-}
-
-.header__title {
-  font-size: 40px;
-  color: white;
-  font-family: $font-primary;
+  background: $bg-color;
+    &__img{
+        border-radius: 50%;
+        height: 10%;
+        width: 10%;
+    }
+    &__title {
+        font-size: 40px;
+        color: white;
+        font-family: $font-primary;
+    }
 }
 
 .hero {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
-.form1 {
+.form{
   display: flex;
   justify-content: space-between;
   width: 90%;
+    &__phraseFilter {
+        color: rgb(10, 0, 7);
+        font-size: 18px;
+        font-family: $font-primary;
+        &--input {
+            border: solid 2px mediumvioletred;
+            margin-left: 20px;
+            padding: 4px;
+          }
+    }
+    &__characterFilter {
+        color: rgb(10, 0, 7);
+        font-size: 18px;
+        font-family: $font-primary;
+        &--select {
+            border: solid 2px mediumvioletred;
+            margin-left: 20px;
+            padding: 4px 8px;
+          }
+      }
 }
-.container1 {
+
+.container {
   display: flex;
   align-items: center;
 }
-.form1__text1 {
-  color: rgb(10, 0, 7);
-  font-size: 18px;
-  font-family: $font-primary;
-}
 
-.form1__text1--input {
-  border: solid 2px mediumvioletred;
-  margin-left: 20px;
-}
-
-.form1__text2 {
-  color: rgb(10, 0, 7);
-  font-size: 18px;
-  font-family: $font-primary;
-}
-
-.form1__text2--select {
-  border: solid 2px mediumvioletred;
-  margin-left: 20px;
-}
 ::placeholder {
   font-family: $font-secundary;
 }
+
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px 0 0 50px;
+  padding: 20px 0 0 50px;
+    &__element {
+        margin-bottom: 2.5px;
+        width: 90%;
+        padding: 5px;
+        border: solid 2px rgb(5, 168, 41);
+        background-color: rgb(243, 235, 242);
+        &--quote {
+            font-size: 14px;
+            font-family: $font-primary;
+          }
+        &--character {
+            font-size: 12px;
+            font-family: $font-primary;
+            font-weight: bold;
+          }
+      }
 }
 
-.list__element {
-  margin-bottom: 2px;
-  width: 90%;
-  padding: 5px;
-  border: solid 2px rgb(5, 168, 41);
-  background-color: rgb(243, 235, 242);
-}
-
-.list__element--quote {
-  font-size: 14px;
-  font-family: $font-primary;
-}
-
-.list__element--character {
-  font-size: 12px;
-  font-family: $font-primary;
-  font-weight: bold;
-}
-
-.form2 {
-  padding: 10px 0 20px 0;
-  width: 90%;
+.formTwo{
+  padding: 32px 20px;
+  width: 60%;
 }
 
 fieldset {
@@ -136,11 +101,11 @@ fieldset {
   font-family: $font-primary;
 }
 
-.div1 {
+.boxPhrase{
   padding-bottom: 15px;
 }
 
-.div2 {
+.boxCharacter {
   padding-bottom: 25px;
 }
 
@@ -193,45 +158,13 @@ fieldset {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: repeating-linear-gradient(
-      190deg,
-      rgba(2, 109, 37, 0.5) 40px,
-      rgba(2, 111, 38, 0.5) 80px,
-      rgba(3, 161, 53, 0.5) 120px,
-      rgba(6, 192, 37, 0.5) 160px,
-      rgba(31, 214, 95, 0.5) 200px,
-      rgba(62, 230, 152, 0.5) 240px,
-      rgba(80, 236, 145, 0.5) 280px,
-      rgba(148, 248, 196, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      -190deg,
-      rgba(2, 109, 37, 0.5) 40px,
-      rgba(2, 111, 38, 0.5) 80px,
-      rgba(3, 161, 53, 0.5) 120px,
-      rgba(6, 192, 37, 0.5) 160px,
-      rgba(31, 214, 95, 0.5) 200px,
-      rgba(62, 230, 152, 0.5) 240px,
-      rgba(80, 236, 145, 0.5) 280px,
-      rgba(148, 248, 196, 0.5) 300px
-    ),
-    repeating-linear-gradient(
-      23deg,
-      rgb(2, 81, 31) 50px,
-      rgb(2, 134, 17) 100px,
-      rgb(6, 188, 48) 150px,
-      rgb(5, 207, 55) 200px,
-      rgb(3, 229, 41) 250px,
-      rgb(44, 246, 88) 300px,
-      rgb(96, 241, 118) 350px,
-      rgb(159, 248, 170) 370px
-    );
+  background: $bg-color;
 }
 
 .footer__img {
   border-radius: 50%;
-  height: 10%;
-  width: 10%;
+  height: 4%;
+  width: 4%;
   border: solid 1px white;
 }
 
